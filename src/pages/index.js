@@ -6,25 +6,7 @@ import Layout from "../components/layout"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <Masonry className="showcase">
-      {data.allDatoCmsWork.edges.map(({ node: work }) => (
-        <div key={work.id} className="showcase__item">
-          <figure className="card">
-            <Link to={`/works/${work.slug}`} className="card__image">
-              <Img fluid={work.coverImage.fluid} />
-            </Link>
-            <figcaption className="card__caption">
-              <h6 className="card__title">
-                <Link to={`/works/${work.slug}`}>{work.title}</Link>
-              </h6>
-              <div className="card__description">
-                <p>{work.excerpt}</p>
-              </div>
-            </figcaption>
-          </figure>
-        </div>
-      ))}
-    </Masonry>
+    <iframe src="https://player.vimeo.com/video/328818285?app_id=122963&amp;wmode=opaque" width="640" height="360" frameborder="0" title="SOW Official Trailer (2019)" allow="autoplay; fullscreen" allowfullscreen="" id="yui_3_17_2_1_1578155748692_114"></iframe>
   </Layout>
 )
 
