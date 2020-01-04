@@ -1,0 +1,3 @@
+- install facebook pixel
+- install google analytics
+- enable google webmaster tools
